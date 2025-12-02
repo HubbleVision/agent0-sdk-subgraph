@@ -1,0 +1,20 @@
+{
+  "network": "bsc",
+  "chainId": "56",
+  "displayName": "BSC Mainnet",
+  "identityRegistry": {
+    "address": "TBD",
+    "startBlock": 0
+  },
+  "reputationRegistry": {
+    "address": "TBD",
+    "startBlock": 0
+  },
+  "validationRegistry": {
+    "address": "TBD",
+    "startBlock": 0
+  },
+  "graphNode": {
+    "network": "bsc"
+  }
+}

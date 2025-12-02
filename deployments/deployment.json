@@ -80,6 +80,28 @@
           "schema": "1.0.0",
           "subgraph": "1.0.0"
         }
+      },
+      "erc-8004-bsc-testnet": {
+        "network": "bsc-testnet",
+        "displayName": "BSC Testnet",
+        "chainId": "97",
+        "status": "prod",
+        "configFile": "config/networks/bsc-testnet.json",
+        "versions": {
+          "schema": "1.0.0",
+          "subgraph": "1.0.0"
+        }
+      },
+      "erc-8004-bsc-mainnet": {
+        "network": "bsc",
+        "displayName": "BSC Mainnet",
+        "chainId": "56",
+        "status": "dev",
+        "configFile": "config/networks/bsc-mainnet.json",
+        "versions": {
+          "schema": "1.0.0",
+          "subgraph": "1.0.0"
+        }
       }
     }
   }
