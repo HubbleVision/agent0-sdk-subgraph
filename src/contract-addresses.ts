@@ -81,6 +81,22 @@ export function getContractAddresses(chainId: BigInt): ContractAddresses {
       Bytes.fromHexString("0x34ae1196b1609e01ebc90b75c802b2ea87203f13")
     )
   }
+  // BSC Testnet (97)
+  else if (chainId.equals(BigInt.fromI32(97))) {
+    return new ContractAddresses(
+      Bytes.fromHexString("0xf04A7eEeB7f99631DD08D9C6418ED8f9a8A03292"),
+      Bytes.fromHexString("0x50100029Ac4E6F42505F5773841c03bcfB60181F"),
+      Bytes.fromHexString("0x8366684cCE2266aD632bfE78E784007848E05E3a")
+    )
+  }
+  // BSC Mainnet (56)
+  else if (chainId.equals(BigInt.fromI32(56))) {
+    return new ContractAddresses(
+      Bytes.fromHexString("0x0000000000000000000000000000000000000000"), // TBD
+      Bytes.fromHexString("0x0000000000000000000000000000000000000000"), // TBD
+      Bytes.fromHexString("0x0000000000000000000000000000000000000000")  // TBD
+    )
+  }
 
   // Unsupported chain - return zero addresses
   return new ContractAddresses(
@@ -102,6 +118,8 @@ export function getChainName(chainId: BigInt): string {
   if (chainId.equals(BigInt.fromI32(296))) return "Hedera Testnet"
   if (chainId.equals(BigInt.fromI32(998))) return "HyperEVM Testnet"
   if (chainId.equals(BigInt.fromString("1351057110"))) return "SKALE Base Sepolia Testnet"
+  if (chainId.equals(BigInt.fromI32(97))) return "BSC Testnet"
+  if (chainId.equals(BigInt.fromI32(56))) return "BSC Mainnet"
   return `Unsupported Chain ${chainId.toString()}`
 }
 
@@ -135,6 +153,8 @@ export function getSupportedChains(): BigInt[] {
     BigInt.fromI32(80002),         // Polygon Amoy
     BigInt.fromI32(296),           // Hedera Testnet
     BigInt.fromI32(998),           // HyperEVM Testnet
-    BigInt.fromString("1351057110") // SKALE Base Sepolia Testnet
+    BigInt.fromString("1351057110"), // SKALE Base Sepolia Testnet
+    BigInt.fromI32(97)             // BSC Testnet
+    // Note: BSC Mainnet (56) will be added after contract deployment
   ]
 }
