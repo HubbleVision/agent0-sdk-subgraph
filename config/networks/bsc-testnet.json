@@ -1,5 +1,5 @@
 {
-  "network": "bsc-testnet",
+  "network": "chapel",
   "chainId": "97",
   "displayName": "BSC Testnet",
   "identityRegistry": {
@@ -15,6 +15,6 @@
     "startBlock": 75935100
   },
   "graphNode": {
-    "network": "bsc-testnet"
+    "network": "chapel"
   }
 }
