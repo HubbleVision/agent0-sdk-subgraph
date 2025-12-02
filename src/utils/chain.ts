@@ -22,7 +22,7 @@ export function getChainId(): i32 {
     return 998  // HyperEVM Testnet
   } else if (network == "skale-base-sepolia-testnet") {
     return 1351057110  // SKALE Base Sepolia Testnet
-  } else if (network == "bsc-testnet") {
+  } else if (network == "bsc-testnet" || network == "chapel") {
     return 97  // BSC Testnet
   }
   // Mainnets (for future use)
@@ -38,7 +38,7 @@ export function getChainId(): i32 {
     return 42161
   } else if (network == "optimism") {
     return 10
-  } else if (network == "bsc") {
+  } else if (network == "bsc" || network == "bsc-mainnet") {
     return 56
   } else if (network == "avalanche") {
     return 43114
