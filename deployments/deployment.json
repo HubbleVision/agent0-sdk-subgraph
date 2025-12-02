@@ -93,7 +93,7 @@
         }
       },
       "erc-8004-bsc-mainnet": {
-        "network": "bsc",
+        "network": "bsc-mainnet",
         "displayName": "BSC Mainnet",
         "chainId": "56",
         "status": "dev",
