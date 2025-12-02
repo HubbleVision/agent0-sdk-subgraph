@@ -153,10 +153,11 @@ export function getChainDisplayName(chainId: i32): string {
 }
 
 /**
- * Check if chain ID is supported
+ * Check if chain ID is known (has a registered network name)
+ * Note: Use isSupportedChain() from contract-addresses.ts to check if contracts are deployed
  * @param chainId Chain ID
- * @returns true if the chain is supported
+ * @returns true if the chain is known (regardless of contract deployment status)
  */
-export function isSupportedChain(chainId: i32): boolean {
+export function isKnownChain(chainId: i32): boolean {
   return getChainName(chainId) != "unknown"
 }
