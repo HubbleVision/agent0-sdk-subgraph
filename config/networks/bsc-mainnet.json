@@ -3,15 +3,15 @@
   "chainId": "56",
   "displayName": "BSC Mainnet",
   "identityRegistry": {
-    "address": "TBD",
+    "address": "0x0000000000000000000000000000000000000000",
     "startBlock": 0
   },
   "reputationRegistry": {
-    "address": "TBD",
+    "address": "0x0000000000000000000000000000000000000000",
     "startBlock": 0
   },
   "validationRegistry": {
-    "address": "TBD",
+    "address": "0x0000000000000000000000000000000000000000",
     "startBlock": 0
   },
   "graphNode": {
